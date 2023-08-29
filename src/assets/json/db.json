@@ -1,0 +1,286 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "",
+      "email": "user1@example.com",
+      "password": "p@ssw0rd1",
+      "tasksId": 1
+    },
+    {
+      "id": 2,
+      "name": "",
+      "email": "user2@example.com",
+      "password": "securePass2",
+      "tasksId": 2
+    },
+    {
+      "id": 3,
+      "name": "",
+      "email": "user3@example.com",
+      "password": "mySecret123",
+      "tasksId": 3
+    },
+    {
+      "id": 4,
+      "name": "",
+      "email": "user4@example.com",
+      "password": "newPassw0rd",
+      "tasksId": 4
+    },
+    {
+      "id": 5,
+      "name": "",
+      "email": "user5@example.com",
+      "password": "saf3tyPass",
+      "tasksId": 5
+    },
+    {
+      "id": 6,
+      "name": "",
+      "email": "user6@example.com",
+      "password": "p@ssw0rd123",
+      "tasksId": 6
+    },
+    {
+      "id": 7,
+      "name": "",
+      "email": "user7@example.com",
+      "password": "strongPass789",
+      "tasksId": 7
+    },
+    {
+      "id": 8,
+      "name": "",
+      "email": "user8@example.com",
+      "password": "secret123!",
+      "tasksId": 8
+    },
+    {
+      "id": 9,
+      "name": "",
+      "email": "user9@example.com",
+      "password": "p@ssw0rdxyz",
+      "tasksId": 9
+    },
+    {
+      "id": 10,
+      "name": "",
+      "email": "user10@example.com",
+      "password": "myP@ssw0rd",
+      "tasksId": 10
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "title": "Call the",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "title": "Call the",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "completed"
+    },
+
+    {
+      "id": 7,
+      "userId": 3,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 9,
+      "userId": 3,
+      "title": "Call the",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "completed"
+    },
+
+    {
+      "id": 10,
+      "userId": 4,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 11,
+      "userId": 4,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 12,
+      "userId": 4,
+      "title": "Call the",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "completed"
+    },
+    {
+      "id": 13,
+      "userId": 5,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 14,
+      "userId": 5,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 15,
+      "userId": 5,
+      "title": "Call the",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "completed"
+    },
+    {
+      "id": 16,
+      "userId": 6,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 17,
+      "userId": 6,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 18,
+      "userId": 7,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 19,
+      "userId": 7,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 20,
+      "userId": 8,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "completed"
+    },
+    {
+      "id": 21,
+      "userId": 8,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "completed"
+    },
+    {
+      "id": 22,
+      "userId": 9,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "medium",
+      "status": "in_progress"
+    },
+    {
+      "id": 23,
+      "userId": 9,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "not_started"
+    },
+    {
+      "id": 24,
+      "userId": 10,
+      "title": "Buy Groceries",
+      "due_date": "2023-09-10",
+      "priority": "low",
+      "status": "in_progress"
+    },
+    {
+      "id": 25,
+      "userId": 10,
+      "title": "Call the Electrician",
+      "due_date": "2023-09-12",
+      "priority": "high",
+      "status": "not_started"
+    },
+    {
+      "id": 26,
+      "userId": 10,
+      "title": "Call the",
+      "due_date": "2023-09-12",
+      "priority": "medium",
+      "status": "completed"
+    }
+  ]
+}
