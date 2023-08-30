@@ -30,3 +30,5 @@ export class UserService {
     return this.http.delete<User>(`${this.apiUri}/users/${id}`);
   }
 }
+// Curso de JSON-SERVER:
+// https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya

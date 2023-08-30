@@ -14,7 +14,7 @@
     "lint:fix": "ng lint --fix",
     "prettier": "npx prettier --write .",
     "prepare": "husky install",
-    "db": "json-server --watch ./src/assets/json/db.json"
+    "db": "json-server --watch ./src/backend/db.json --routes ./src/backend/routes.json"
   },
   "private": true,
   "dependencies": {

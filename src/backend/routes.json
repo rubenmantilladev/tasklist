@@ -1,0 +1,9 @@
+{
+  "/api/v1/*": "/$1",
+  "/user/:id": "/users/:id",
+  "/user/tasks/:id": "/tasks/:id",
+  "/tasks/p/:priority": "/tasks?priority=:priority",
+  "/tasks/s/:status": "/tasks?status=:status"
+}
+
+
