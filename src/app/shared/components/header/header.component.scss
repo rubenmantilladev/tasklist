@@ -1,0 +1,53 @@
+.active {
+  color: #5de995;
+}
+
+header {
+  background: #3585c6;
+  width: 100vw;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      a {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+
+        li {
+          a:not(.btn.btn-header) {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              color: #202020;
+            }
+          }
+        }
+      }
+    }
+  }
+}

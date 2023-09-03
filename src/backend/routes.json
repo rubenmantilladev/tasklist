@@ -5,5 +5,3 @@
   "/tasks/p/:priority": "/tasks?priority=:priority",
   "/tasks/s/:status": "/tasks?status=:status"
 }
-
-
