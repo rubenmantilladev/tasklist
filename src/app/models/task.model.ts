@@ -1,9 +1,11 @@
 export interface Task {
   id?: number;
-  userId: number;
+  userId?: number;
+  categoryId?: number;
   title: string;
-  status: TaskStatus;
-  priority: TaskPriority;
+  due_date: Date;
+  status: string;
+  priority: string;
 }
 
 export enum TaskStatus {

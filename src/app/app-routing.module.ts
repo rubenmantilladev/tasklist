@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'tasktodo', pathMatch: 'full' },
   {
-    path: 'home',
+    path: 'tasktodo',
     loadChildren: () =>
       import('./core/layout/layout.module').then((m) => m.LayoutModule),
   },
@@ -13,7 +13,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./core/auth/auth.module').then((m) => m.AuthModule),
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: 'tasktodo' },
 ];
 
 @NgModule({

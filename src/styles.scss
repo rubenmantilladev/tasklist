@@ -30,6 +30,20 @@ body {
   }
 }
 
+.btn-danger {
+  background: #ff4d4d;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 2px solid #ff4d4d;
+
+  &:hover {
+    background: #ff4d4dbf;
+  }
+}
+
 .active {
   color: #5de995;
 }

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="title">
+    <h3>Todas las tareas</h3>
+    <div class="add-task-card">
+      <button class="add-task-btn" (click)="openDialog()">
+        <p class="add-task-text">Añadir tarea</p>
+        <img
+          class="add-task-icon"
+          src="assets/images/icons/add-circle-svgrepo-com.svg"
+          alt="add button"
+        />
+      </button>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container-task-list">
+      <app-task-card
+        *ngFor="let task of tasks"
+        [task]="task"
+        (tasks)="reloadTasks($event)"
+      ></app-task-card>
+    </div>
+  </div>
+</div>

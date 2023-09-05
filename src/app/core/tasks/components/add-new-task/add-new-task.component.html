@@ -1,0 +1,45 @@
+<div class="form-container">
+  <form [formGroup]="taskForm" (ngSubmit)="addNewTask()">
+    <legend>
+      <h4>Añadir Tarea</h4>
+    </legend>
+    <div class="form-group">
+      <label for="title">Título</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        placeholder="Título"
+        formControlName="title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="priority">Prioridad</label>
+      <select class="form-control" id="priority" formControlName="priority">
+        <option [value]="taskPriority[0]">Alta</option>
+        <option [value]="taskPriority[1]">Media</option>
+        <option [value]="taskPriority[2]" [selected]="true">Baja</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="status">Estado</label>
+      <select class="form-control" id="status" formControlName="status">
+        <option [value]="taskStatus[0]" [selected]="true">No iniciado</option>
+        <option [value]="taskStatus[1]">En progreso</option>
+        <option [value]="taskStatus[2]">Completada</option>
+      </select>
+    </div>
+    <div class="btns">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="!taskForm.valid"
+      >
+        Añadir
+      </button>
+      <button type="button" class="btn btn-danger" mat-dialog-close>
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>

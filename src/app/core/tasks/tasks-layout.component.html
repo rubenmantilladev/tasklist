@@ -1,0 +1,15 @@
+<main>
+  <div class="sidebar-content">
+    <div class="sidebar">
+      <button class="btn btn-header">Agregar Categoría</button>
+      <ul>
+        <li><a [routerLink]="['/tasktodo/alltasks']">Todas las tareas</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="layout-content">
+    <div class="layout-content-inner">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>

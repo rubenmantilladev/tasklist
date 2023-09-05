@@ -8,15 +8,10 @@ import { Task } from '../models/task.model';
 })
 export class TaskService {
   apiUri = environment.uri;
-  userId = 1;
   private http = inject(HttpClient);
 
-  getTasksByUserId() {
-    return this.http.get(`${this.apiUri}/users/${this.userId}/tasks`);
-  }
-
-  getTaskId(id: number) {
-    return this.http.get(`${this.apiUri}/users/${this.userId}/tasks?id=${id}`);
+  getAllTasks() {
+    return this.http.get<Task[]>(`${this.apiUri}/tasks`);
   }
 
   createTask(task: Task) {
@@ -25,5 +20,9 @@ export class TaskService {
 
   updateTask(task: Task) {
     return this.http.patch(`${this.apiUri}/tasks/${task.id}`, task);
+  }
+
+  deleteTask(taskId: number) {
+    return this.http.delete(`${this.apiUri}/tasks/${taskId}`);
   }
 }

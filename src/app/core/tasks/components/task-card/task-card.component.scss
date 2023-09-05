@@ -1,0 +1,151 @@
+.task-card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 150px;
+  min-height: 150px;
+
+  .task-card-header {
+    margin-bottom: 10px;
+  }
+
+  .task-card-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .task-card-date {
+    font-size: 0.9rem;
+    color: #999;
+  }
+
+  .status {
+    font-size: 0.8rem;
+
+    .in_progress {
+      background: #f2c50f1a;
+      color: #f1c40f;
+      fill: #f1c40f;
+    }
+    .completed {
+      background: #2ecc711a;
+      color: #2ecc71;
+      fill: #2ecc71;
+    }
+    .not_started {
+      background: #e74c3c1a;
+      color: #e74c3c;
+      fill: #e74c3c;
+    }
+
+    .low {
+      background: #f2c50f1a;
+      color: #f1c40f;
+      fill: #f1c40f;
+    }
+    .medium {
+      background: #e67e221a;
+      color: #e67e22;
+      fill: #e67e22;
+    }
+    .high {
+      background: #e74c3c1a;
+      color: #e74c3c;
+      fill: #e74c3c;
+    }
+
+    .priority-text {
+      margin-top: 0.4rem;
+    }
+
+    .priority-text,
+    .status-icon {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 1rem;
+
+      circle {
+        background: none;
+      }
+    }
+  }
+}
+
+.add-task-card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  opacity: 0.4;
+
+  .add-task-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 2px dashed #3585c6;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .add-task-icon {
+      width: 40px;
+      transform: filter 0.2s ease-in-out;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  .edit-task {
+    &:hover {
+      svg path {
+        fill: #f1c40f;
+      }
+    }
+
+    svg path {
+      fill: #333;
+    }
+  }
+
+  .delete-task {
+    &:hover {
+      svg path {
+        stroke: #e74c3c;
+      }
+    }
+
+    svg path {
+      stroke: #333;
+    }
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
