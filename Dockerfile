@@ -14,5 +14,5 @@ WORKDIR /usr/src/app
 COPY --from=builder /usr/src/app/dist ./dist
 COPY --from=builder /usr/src/app/package*.json ./
 
-RUN npm install --only=production
+RUN npm install --production
 CMD ["npm", "start"]
