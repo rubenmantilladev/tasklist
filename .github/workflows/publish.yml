@@ -34,7 +34,7 @@ jobs:
 
       - name: SSH into Server
         run: |
-          sshpass -p ${{ secrets.SSH_PORT }} ssh -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
+          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -p${{ secrets.SSH_PORT }} -o ConnectTimeout=60 StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
             cd /root/rubenmantilladev/tasklist
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.TOKEN_TASKLIST }}
             docker pull ghcr.io/rubenmantilladev/tasklist:latest
