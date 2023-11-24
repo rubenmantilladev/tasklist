@@ -1,6 +1,6 @@
 # Stage 1
 FROM node:18-alpine as builder
-WORKDIR /usr/src/app
+WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
@@ -9,10 +9,10 @@ RUN ls -alt
 
 # Etapa de produccion
 FROM node:18-alpine
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY --from=builder /usr/src/app/dist ./dist
-COPY --from=builder /usr/src/app/package*.json ./
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package.json /app/package-lock.json ./
 
 RUN npm install --omit=dev
 CMD ["npm", "start"]
