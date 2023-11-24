@@ -25,25 +25,25 @@ jobs:
           docker build . --tag ghcr.io/rubenmantilladev/tasklist:latest
           docker push ghcr.io/rubenmantilladev/tasklist:latest
 
-deploy:
-  needs: create-docker-image
-  runs-on: ubuntu-latest
-  steps:
-    - name: Install sshpass
-      run: sudo apt-get install -y sshpass
+  deploy:
+    needs: create-docker-image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
 
-    - name: SSH into Server
-      run: |
-        sshpass -p ${{ secrets.SSH_PORT }} ssh -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
-          cd /root/rubenmantilladev/tasklist
-          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.TOKEN_TASKLIST }}
-          docker pull ghcr.io/rubenmantilladev/tasklist:latest
-          docker stop tasklist && docker rm tasklist
-          docker run -d \
-            --name tasklist \
-            -p 4200:4200 \
-            -v /root/rubenmantilladev/tasklist:/app \
-            -w /app \
-            --restart=always \
-            ghcr.io/rubenmantilladev/tasklist:latest
-        EOF
+      - name: SSH into Server
+        run: |
+          sshpass -p ${{ secrets.SSH_PORT }} ssh -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
+            cd /root/rubenmantilladev/tasklist
+            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.TOKEN_TASKLIST }}
+            docker pull ghcr.io/rubenmantilladev/tasklist:latest
+            docker stop tasklist && docker rm tasklist
+            docker run -d \
+              --name tasklist \
+              -p 4200:4200 \
+              -v /root/rubenmantilladev/tasklist:/app \
+              -w /app \
+              --restart=always \
+              ghcr.io/rubenmantilladev/tasklist:latest
+          EOF
