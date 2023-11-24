@@ -15,4 +15,4 @@ COPY --from=builder /usr/src/app/dist ./dist
 COPY --from=builder /usr/src/app/package*.json ./
 
 RUN npm install --only=production
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "start"]
