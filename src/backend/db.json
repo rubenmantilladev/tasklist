@@ -1,6 +1,21 @@
 {
   "users": [],
-  "tasks": [],
+  "tasks": [
+    {
+      "title": "Tarea 1",
+      "due_date": "2023-11-22T22:19:17.349Z",
+      "status": "completed",
+      "priority": "low",
+      "id": 1
+    },
+    {
+      "title": "Tarea 2",
+      "due_date": "2023-11-22T22:20:04.497Z",
+      "status": "completed",
+      "priority": "low",
+      "id": 2
+    }
+  ],
   "categories": [
     {
       "id": 1,
