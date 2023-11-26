@@ -42,7 +42,7 @@ jobs:
             docker stop tasklist && docker rm tasklist
             docker run -d \
               --name tasklist \
-              -p 4200:4200 \
+              -p 80:80 \
               -v /root/rubenmantilladev/tasklist:/app \
               -w /app \
               --restart=always \
